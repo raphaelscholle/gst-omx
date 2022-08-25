@@ -41,14 +41,7 @@ extern "C" {
 #include <OMX_Core.h>
 
 /** NALU Formats */
-typedef enum OMX_NALUFORMATSTYPE {
-    OMX_NaluFormatStartCodes = 1,
-    OMX_NaluFormatOneNaluPerBuffer = 2,
-    OMX_NaluFormatOneByteInterleaveLength = 4,
-    OMX_NaluFormatTwoByteInterleaveLength = 8,
-    OMX_NaluFormatFourByteInterleaveLength = 16,
-    OMX_NaluFormatCodingMax = 0x7FFFFFFF
-} OMX_NALUFORMATSTYPE;
+
 
 
 /** NAL Stream Format */
@@ -56,7 +49,6 @@ typedef struct OMX_NALSTREAMFORMATTYPE{
     OMX_U32 nSize;
     OMX_VERSIONTYPE nVersion;
     OMX_U32 nPortIndex;
-    OMX_NALUFORMATSTYPE eNaluFormat;
 } OMX_NALSTREAMFORMATTYPE;
 
 
