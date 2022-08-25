@@ -44,40 +44,6 @@ extern "C" {
 
 This enum lists the current Khronos extension indices to OpenMAX IL.
 */
-typedef enum OMX_INDEXEXTTYPE {
-
-    /* Component parameters and configurations */
-    OMX_IndexExtComponentStartUnused = OMX_IndexKhronosExtensions + 0x00100000,
-    OMX_IndexConfigCallbackRequest,                 /**< reference: OMX_CONFIG_CALLBACKREQUESTTYPE */
-    OMX_IndexConfigCommitMode,                      /**< reference: OMX_CONFIG_COMMITMODETYPE */
-    OMX_IndexConfigCommit,                          /**< reference: OMX_CONFIG_COMMITTYPE */
-
-    /* Port parameters and configurations */
-    OMX_IndexExtPortStartUnused = OMX_IndexKhronosExtensions + 0x00200000,
-
-    /* Audio parameters and configurations */
-    OMX_IndexExtAudioStartUnused = OMX_IndexKhronosExtensions + 0x00400000,
-
-    /* Image parameters and configurations */
-    OMX_IndexExtImageStartUnused = OMX_IndexKhronosExtensions + 0x00500000,
-
-    /* Video parameters and configurations */
-    OMX_IndexExtVideoStartUnused = OMX_IndexKhronosExtensions + 0x00600000,
-    OMX_IndexParamNalStreamFormatSupported,         /**< reference: OMX_NALSTREAMFORMATTYPE */
-    OMX_IndexParamNalStreamFormat,                  /**< reference: OMX_NALSTREAMFORMATTYPE */
-    OMX_IndexParamNalStreamFormatSelect,            /**< reference: OMX_NALSTREAMFORMATTYPE */
-
-    /* Image & Video common configurations */
-    OMX_IndexExtCommonStartUnused = OMX_IndexKhronosExtensions + 0x00700000,
-
-    /* Other configurations */
-    OMX_IndexExtOtherStartUnused = OMX_IndexKhronosExtensions + 0x00800000,
-
-    /* Time configurations */
-    OMX_IndexExtTimeStartUnused = OMX_IndexKhronosExtensions + 0x00900000,
-
-    OMX_IndexExtMax = 0x7FFFFFFF
-} OMX_INDEXEXTTYPE;
 
 #ifdef __cplusplus
 }
