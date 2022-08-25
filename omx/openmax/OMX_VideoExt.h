@@ -40,19 +40,6 @@ extern "C" {
  */
 #include <OMX_Core.h>
 
-/** NALU Formats */
-
-
-
-/** NAL Stream Format */
-typedef struct OMX_NALSTREAMFORMATTYPE{
-    OMX_U32 nSize;
-    OMX_VERSIONTYPE nVersion;
-    OMX_U32 nPortIndex;
-} OMX_NALSTREAMFORMATTYPE;
-
-
-
 #ifdef __cplusplus
 }
 #endif /* __cplusplus */
